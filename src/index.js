@@ -1,19 +1,19 @@
 const { app, BrowserWindow, ipcMain} = require('electron');
 const path = require('path');
-const { autoUpdater } = require("electron-updater")
+const { autoUpdater } = require('electron-updater')
 const log = require('electron-log');
 const fs = require("fs");
 
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 
-fs.mkdir("C:/Automation Toolboxv3.0", function(err) {
+fs.mkdir("C:/Automation Toolboxv2.0", function(err) {
   if (err) {
     console.log(err)
   } else {
     console.log("New directory successfully created.")
   }
 })
-log.transports.file.resolvePath = () => path.join("C:/Automation Toolboxv3.0", '/logs/main.log');
+log.transports.file.resolvePath = () => path.join("C:/Automation Toolboxv2.0", '/logs/main.log');
 log.log("Application version"+ app.getVersion())
 log.info('Hello, log');
 
