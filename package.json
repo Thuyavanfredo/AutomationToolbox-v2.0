@@ -6,7 +6,7 @@
   "build": {
     "appId": "AutomationToolbox-v2.0",
     "win": {
-      "target":[
+      "target": [
         "nsis"
       ],
       "icon": "img/android-chrome-512x512.png"
@@ -20,11 +20,15 @@
   },
   "scripts": {
     "start": "electron .",
+    "dist": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thuyavan Tamilarasan",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^26.1.0"
+    "electron": "^26.1.0",
+    "@electron-builder": "^24.6.4"
+  },
+  "dependencies": {
   }
 }
