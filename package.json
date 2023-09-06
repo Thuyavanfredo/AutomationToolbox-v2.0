@@ -1,0 +1,30 @@
+{
+  "name": "automation-toolbox-v2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "build": {
+    "appId": "AutomationToolbox-v2.0",
+    "win": {
+      "target":[
+        "nsis"
+      ],
+      "icon": "img/android-chrome-512x512.png"
+    }
+  },
+  "nsis": {
+    "oneClick": true,
+    "installerIcon": "img/android-chrome-512x512.png",
+    "uninstallerIcon": "img/android-chrome-512x512.png",
+    "uninstallDisplayName": "automation-toolbox-uninstaller"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thuyavan Tamilarasan",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.1.0"
+  }
+}
